@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without tests # do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	POE
@@ -8,16 +8,16 @@
 Summary:	POE::Exceptions - POE class for handling exceptions
 Summary(pl):	POE::Exceptions - klasa POE do obs³ugi wyj±tków
 Name:		perl-POE-Exceptions
-Version:	0.02
+Version:	0.03
 Release:	1
 License:	BSD-like
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	599004002a158c9fdd095258c0a9afd8
+# Source0-md5:	b962d88f0bdcb2c9e63f0451cd7c4a29
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{!?_without_tests:1}0
-BuildRequires:	perl-POE >= 0.22
+%if %{with tests}
+BuildRequires:	perl-POE >= 0.25
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -51,7 +51,7 @@ by³o.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
