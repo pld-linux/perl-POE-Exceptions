@@ -9,10 +9,10 @@ Summary:	POE::Exceptions - POE class for handling exceptions
 Summary(pl):	POE::Exceptions - klasa POE do obs³ugi wyj±tków
 Name:		perl-POE-Exceptions
 Version:	0.03
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/POE/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b962d88f0bdcb2c9e63f0451cd7c4a29
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -65,6 +65,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES
-%{perl_vendorlib}/%{pdir}/*.pm
-%{perl_vendorlib}/%{pdir}/*/*.pm
+%{perl_vendorlib}/POE/*.pm
+%dir %{perl_vendorlib}/POE/Kernel
+%{perl_vendorlib}/POE/Kernel/*.pm
+%{perl_vendorlib}/POE/Session/*.pm
 %{_mandir}/man3/*
