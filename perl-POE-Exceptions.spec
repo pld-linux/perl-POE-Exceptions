@@ -12,7 +12,7 @@ Version:	0.03
 Release:	2
 License:	BSD-like
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/POE/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b962d88f0bdcb2c9e63f0451cd7c4a29
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
