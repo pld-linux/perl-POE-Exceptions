@@ -3,8 +3,8 @@
 %bcond_without tests # do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	POE
-%define	pnam	Exceptions
+%define		pdir	POE
+%define		pnam	Exceptions
 Summary:	POE::Exceptions - POE class for handling exceptions
 Summary(pl):	POE::Exceptions - klasa POE do obs³ugi wyj±tków
 Name:		perl-POE-Exceptions
