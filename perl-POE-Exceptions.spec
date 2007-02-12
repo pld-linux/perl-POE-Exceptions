@@ -6,7 +6,7 @@
 %define		pdir	POE
 %define		pnam	Exceptions
 Summary:	POE::Exceptions - POE class for handling exceptions
-Summary(pl):	POE::Exceptions - klasa POE do obs³ugi wyj±tków
+Summary(pl.UTF-8):   POE::Exceptions - klasa POE do obsÅ‚ugi wyjÄ…tkÃ³w
 Name:		perl-POE-Exceptions
 Version:	0.0502
 Release:	0.1
@@ -34,16 +34,16 @@ with the signal appropriately. If the signal handler returns 0, POE
 will assume that the handler does not want to deal with the signal and
 POE will propagate the exception as if the handler never existed.
 
-%description -l pl
-POE::Exceptions rozszerza POE o mi³y sposób przechwytywania wyj±tków.
-Wprowadza nowy sygna³ "DIE". Ten sygna³ zostanie wys³any przy ka¿dym
-wyst±pieniu wyj±tku (na wypadek, gdyby termin "wyj±tek" wydawa³ siê
-obcy - wyj±tek wystêpuje wtedy, kiedy kod decyduje siê na awaryjne
-zakoñczenie poprzez "die"). Je¶li procedura obs³ugi sygna³u zwróci 1,
-POE za³o¿y, ¿e procedura poradzi³a sobie w³a¶ciwie z tym sygna³em.
-Je¶li jednak zwróci 0, POE za³o¿y, ¿e procedura nie chce zajmowaæ siê
-tym sygna³em, wiêc przeka¿e wyj±tek tak, jakby procedury obs³ugi nie
-by³o.
+%description -l pl.UTF-8
+POE::Exceptions rozszerza POE o miÅ‚y sposÃ³b przechwytywania wyjÄ…tkÃ³w.
+Wprowadza nowy sygnaÅ‚ "DIE". Ten sygnaÅ‚ zostanie wysÅ‚any przy kaÅ¼dym
+wystÄ…pieniu wyjÄ…tku (na wypadek, gdyby termin "wyjÄ…tek" wydawaÅ‚ siÄ™
+obcy - wyjÄ…tek wystÄ™puje wtedy, kiedy kod decyduje siÄ™ na awaryjne
+zakoÅ„czenie poprzez "die"). JeÅ›li procedura obsÅ‚ugi sygnaÅ‚u zwrÃ³ci 1,
+POE zaÅ‚oÅ¼y, Å¼e procedura poradziÅ‚a sobie wÅ‚aÅ›ciwie z tym sygnaÅ‚em.
+JeÅ›li jednak zwrÃ³ci 0, POE zaÅ‚oÅ¼y, Å¼e procedura nie chce zajmowaÄ‡ siÄ™
+tym sygnaÅ‚em, wiÄ™c przekaÅ¼e wyjÄ…tek tak, jakby procedury obsÅ‚ugi nie
+byÅ‚o.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
