@@ -6,7 +6,7 @@
 %define		pdir	POE
 %define		pnam	Exceptions
 Summary:	POE::Exceptions - POE class for handling exceptions
-Summary(pl.UTF-8):   POE::Exceptions - klasa POE do obsługi wyjątków
+Summary(pl.UTF-8):	POE::Exceptions - klasa POE do obsługi wyjątków
 Name:		perl-POE-Exceptions
 Version:	0.0502
 Release:	0.1
