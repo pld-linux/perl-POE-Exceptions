@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests # do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	POE
 %define		pnam	Exceptions
+%include	/usr/lib/rpm/macros.perl
 Summary:	POE::Exceptions - POE class for handling exceptions
 Summary(pl.UTF-8):	POE::Exceptions - klasa POE do obsługi wyjątków
 Name:		perl-POE-Exceptions
@@ -14,6 +14,7 @@ License:	BSD-like
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7038eaa58356a78d0af6f9d3a5d2c53d
+URL:		http://search.cpan.org/dist/POE-Exceptions/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
