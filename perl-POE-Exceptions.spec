@@ -4,7 +4,6 @@
 
 %define		pdir	POE
 %define		pnam	Exceptions
-%include	/usr/lib/rpm/macros.perl
 Summary:	POE::Exceptions - POE class for handling exceptions
 Summary(pl.UTF-8):	POE::Exceptions - klasa POE do obsługi wyjątków
 Name:		perl-POE-Exceptions
